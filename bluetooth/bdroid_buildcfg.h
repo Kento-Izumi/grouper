@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012 The Android Open Source Project
+ * Copyright 2015 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,17 +17,8 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME "Nexus 7"
+#define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE
+#define BLE_VND_INCLUDED TRUE
 
-// Networking, Capturing, Object Transfer
-// MAJOR CLASS: COMPUTER
-// MINOR CLASS: PALM SIZE PC/PDA
-#define BTA_DM_COD {0x1A, 0x01, 0x14}
-
-#define BTIF_HF_SERVICES (BTA_HSP_SERVICE_MASK)
-#define BTIF_HF_SERVICE_NAMES  { BTIF_HSAG_SERVICE_NAME, NULL }
-#define PAN_NAP_DISABLED TRUE
-#define BLE_INCLUDED FALSE
-#define BTA_GATT_INCLUDED FALSE
-#define SMP_INCLUDED FALSE
 #endif
