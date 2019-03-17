@@ -43,3 +43,6 @@ TARGET_RECOVERY_FSTAB = device/asus/grouper/fstab.grouper
 
 # MALLOC_IMPL := dlmalloc
 MALLOC_SVELTE := true
+
+# added
+androidboot.selinux=permissive
