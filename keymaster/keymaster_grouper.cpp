@@ -759,7 +759,7 @@ static int tee_delete_keypair(const keymaster0_device_t* dev,
 }
 
 //updated
-static int tee_sign_data(const keymaster0_device_t* dev,
+static int tee_sign_data(const struct keymaster0_device_t* dev,
         const void* params,
         const uint8_t* key_blob, const size_t key_blob_length,
         const uint8_t* data, const size_t dataLength,
@@ -830,7 +830,7 @@ static int tee_sign_data(const keymaster0_device_t* dev,
 }
 
 //updated
-static int tee_verify_data(const keymaster0_device_t* dev,
+static int tee_verify_data(const struct keymaster0_device_t* dev,
         const void* params,
         const uint8_t* keyBlob, const size_t keyBlobLength,
         const uint8_t* signedData, const size_t signedDataLength,
