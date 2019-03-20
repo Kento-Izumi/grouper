@@ -610,7 +610,7 @@ static int tee_import_keypair(const keymaster0_device_t* dev,
     return keyblob_save(objId.get(), key_blob, key_blob_length);
 }
 
-static int tee_get_keypair_public(const keymaster0_device* dev,
+static int tee_get_keypair_public(const struct keymaster0_device* dev,
         const uint8_t* key_blob, const size_t key_blob_length,
         uint8_t** x509_data, size_t* x509_data_length) {
 
@@ -722,7 +722,7 @@ static int tee_get_keypair_public(const keymaster0_device* dev,
     return 0;
 }
 
-static int tee_delete_keypair(const keymaster0_device_t* dev,
+static int tee_delete_keypair(const struct keymaster0_device_t* dev,
             const uint8_t* key_blob, const size_t key_blob_length) {
 
     CryptoSession session(reinterpret_cast<CK_SESSION_HANDLE>(dev->context));
